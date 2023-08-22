@@ -14,13 +14,7 @@ public class Paciente {
 		this.estatura = estatura;
 		this.peso = peso;
 	}
-	public Paciente(String nombre, String apellido, float estatura, float peso) {
-		super();
-		this.nombre = nombre;
-		this.apellido = apellido;
-		this.estatura = estatura;
-		this.peso = peso;
-	}
+	
 
 	public String getNombre() {
 		return nombre;
@@ -60,6 +54,14 @@ public class Paciente {
 		return resultado;
 	}
 
-	
+    @Override
+    public String toString() {
+        return "Paciente{" +
+                "nombre='" + nombre + '\'' +
+                ", apellido='" + apellido + '\'' +
+                ", estatura=" + estatura +
+                ", peso=" + peso +
+                '}';
+    }
 
 }
